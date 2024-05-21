@@ -1,0 +1,62 @@
+aside {
+    display: flex;
+    background: linear-gradient(var(--light-accent), var(--circle-color), var(--dark-accent));
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%; /* could also use.. clip-path: circle(20rem at center); */
+    margin: 50px;
+}
+
+aside, section {
+    flex: 1 1 50%;
+}
+
+aside > h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+
+form > input, form > textarea {
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 2rem;
+    display: flex;
+    align-items: stretch;
+    flex-flow: column wrap;
+    justify-content: center;
+    border-left: double 1rem;
+}
+
+input textarea {
+    border-radius: 4px;
+    border-width: 1px;
+    font-size: 1rem;
+    background-color: var(--light-accent);
+}
+
+.dark section {
+    border-left: solid 5rem var(--disabled);
+}
+
+#error {
+    color: var(--error);
+    opacity: .75;
+    position: absolute;
+    bottom: -2rem;
+}
